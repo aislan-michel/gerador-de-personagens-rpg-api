@@ -32,11 +32,24 @@ public class Vampiro
 
     public Habilidades Habilidades { get; set; }
 
+    public IEnumerable<Antecedente> Antecedentes { get; set; }
+    public IEnumerable<Disciplina> Disciplinas { get; set; }
+
+    public Virtudes Virtudes { get; set; }
+
     public TipoVampiro TipoVampiro { get; set; }
 
     private void CriarNeofito()
     {
         TipoVampiro = TipoVampiro.Neofito;
+
+        Antecedentes = new List<Antecedente>(5)
+        {
+            new Antecedente("Recursos", 2),
+            new Antecedente("Contatos", 1),
+            new Antecedente("Rebanho", 1),
+            new Antecedente("Aliados", 1)
+        };
 
         if (Cla == Cla.Brujah)
         {
@@ -64,5 +77,14 @@ public class Vampiro
             new Talentos(2, 3, 3, 2, 0, 0, 2, 0, 0, 0), 
             new Pericias(0, 0, 2, 0, 2, 2, 0, 1, 0, 2),
             new Conhecimentos(0, 0, 0, 2, 0, 0, 0, 1, 2, 0));
+
+        Disciplinas = new List<Disciplina>(3)
+        {
+            new Disciplina("Potência", 1),
+            new Disciplina("Fortitude", 1),
+            new Disciplina("Rapidez", 1)
+        };
+
+        Virtudes = new Virtudes(2, 2, 3);
     }
 }
