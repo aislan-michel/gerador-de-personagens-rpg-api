@@ -37,6 +37,13 @@ public class Vampiro
 
     public Virtudes Virtudes { get; set; }
 
+    public IEnumerable<Qualidade> Qualidades { get; set; }
+    public IEnumerable<Defeito> Defeitos { get; set; }
+
+    public Trilha Trilha { get; set; }
+    public ForcaDeVontade ForcaDeVontade { get; set; }
+    public PontosDeSangue PontosDeSangue { get; set; }
+
     public TipoVampiro TipoVampiro { get; set; }
 
     private void CriarNeofito()
@@ -86,5 +93,21 @@ public class Vampiro
         };
 
         Virtudes = new Virtudes(2, 2, 3);
+
+        Qualidades = new List<Qualidade>()
+        {
+            new Qualidade("Sentido Aguçado", 1)
+        };
+
+        Defeitos = new List<Defeito>()
+        {
+            new Defeito("Vício", 3)
+        };
+
+        Trilha = new Humanidade(4);
+
+        ForcaDeVontade = new ForcaDeVontade(5);
+
+        PontosDeSangue = new PontosDeSangue(10);
     }
 }
