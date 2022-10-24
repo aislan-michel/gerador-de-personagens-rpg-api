@@ -1,0 +1,44 @@
+﻿{
+  "Fisicos": {
+    "Forca": {
+      "Valor": 4,
+      "Especializacao": ""
+    },
+    "Destreza": {
+      "Valor": 2,
+      "Especializacao": ""
+    },
+    "Vigor": {
+      "Valor": 2,
+      "Especializacao": ""
+    }
+  },
+  "Sociais": {
+    "Carisma": {
+      "Valor": 2,
+      "Especializacao": ""
+    },
+    "Manipulacao": {
+      "Valor": 1,
+      "Especializacao": ""
+    },
+    "Aparencia": {
+      "Valor": 3,
+      "Especializacao": ""
+    }
+  },
+  "Mentais": {
+    "Percepcao": {
+      "Valor": 3,
+      "Especializacao": ""
+    },
+    "Inteligencia": {
+      "Valor": 1,
+      "Especializacao": ""
+    },
+    "Raciocinio": {
+      "Valor": 2,
+      "Especializacao": ""
+    }
+  }
+}

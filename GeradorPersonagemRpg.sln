@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3239761-276
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorPersonagemRpg.Api", "src\GeradorPersonagemRpg.Api\GeradorPersonagemRpg.Api.csproj", "{C6F8D0B7-3C40-45CE-8834-80757A9AC21A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorPersonagemRpg.Api.Tests", "tests\GeradorPersonagemRpg.Api.Tests\GeradorPersonagemRpg.Api.Tests.csproj", "{44BDFE86-BC65-43BE-931D-3EE5F5A56808}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{C6F8D0B7-3C40-45CE-8834-80757A9AC21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6F8D0B7-3C40-45CE-8834-80757A9AC21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6F8D0B7-3C40-45CE-8834-80757A9AC21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BDFE86-BC65-43BE-931D-3EE5F5A56808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BDFE86-BC65-43BE-931D-3EE5F5A56808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BDFE86-BC65-43BE-931D-3EE5F5A56808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BDFE86-BC65-43BE-931D-3EE5F5A56808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C6F8D0B7-3C40-45CE-8834-80757A9AC21A} = {C3239761-2761-4418-B28D-74AF09EAA332}

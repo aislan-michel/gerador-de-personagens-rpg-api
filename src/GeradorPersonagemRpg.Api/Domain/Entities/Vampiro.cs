@@ -110,4 +110,56 @@ public class Vampiro
 
         PontosDeSangue = new PontosDeSangue(10);
     }
+
+    private static Random _random = new Random();
+
+    public void DistribuirAtributos()
+    {
+        var pontos = new List<int>() { 7, 5, 3 };
+
+        var pontosOrdenados = new List<int>();
+
+        for (var i = 0; i < 3; i++)
+        {
+            pontosOrdenados.Add(pontos[_random.Next(pontos.Count)]);
+            pontos.Remove(pontos[_random.Next(pontos.Count)]);
+        }
+
+        Atributos = new Atributos();
+
+        int ponto1 = 0;
+        int ponto2 = 0;
+        int ponto3 = 0;
+        
+        ponto1 = _random.Next(pontosOrdenados[0]);
+        ponto2 = _random.Next(pontosOrdenados[0] - ponto1);
+        ponto3 = pontosOrdenados[0] - (ponto1 + ponto2);
+
+        Atributos.Fisicos = new Fisicos(ponto1, ponto2, ponto3);
+        
+        ponto1 = _random.Next(pontosOrdenados[1]);
+        ponto2 = _random.Next(pontosOrdenados[1] - ponto1);
+        ponto3 = pontosOrdenados[1] - (ponto1 + ponto2);
+
+        Atributos.Sociais = new Sociais(ponto1, ponto2, ponto3);
+            
+        ponto1 = _random.Next(pontosOrdenados[2]);
+        ponto2 = _random.Next(pontosOrdenados[2] - ponto1);
+        ponto3 = pontosOrdenados[2] - (ponto1 + ponto2);
+
+        Atributos.Mentais = new Mentais(ponto1, ponto2, ponto3);
+            
+        
+        
+        
+
+        
+
+
+    }
+
+    private void PreencherAtributos()
+    {
+        
+    }
 }

@@ -2,6 +2,11 @@
 
 public class Atributos
 {
+    public Atributos()
+    {
+        
+    }
+    
     public Atributos(Fisicos fisicos, Sociais sociais, Mentais mentais)
     {
         Fisicos = fisicos;

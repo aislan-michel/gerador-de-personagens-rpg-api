@@ -8,7 +8,7 @@ namespace GeradorPersonagemRpg.Api.Controllers;
 [Route("[controller]")]
 public class VampiroController : BaseController
 {
-    [HttpGet]
+    [HttpGet("exemplo")]
     public IActionResult Index()
     {
         var vampiro = new Vampiro(Cla.Brujah, TipoVampiro.Neofito);
@@ -22,5 +22,11 @@ public class VampiroController : BaseController
         var vampiro = new Vampiro(cla, tipoVampiro);
         
         return Ok(vampiro);
+    }
+
+    [HttpPost("criar")]
+    public IActionResult Criar(Vampiro vampiro)
+    {
+        return Ok();
     }
 }
